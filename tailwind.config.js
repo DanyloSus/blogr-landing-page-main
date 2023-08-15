@@ -12,6 +12,7 @@ export default {
         "footer-text": "hsl(240, 2%, 79%)",
         "body-copy": "hsl(207, 13%, 34%)",
         "footer-background": "hsl(240, 10%, 16%)",
+
         "very-light-red": "hsl(13, 100%, 72%)",
         "light-red": "hsl(353, 100%, 62%)",
 

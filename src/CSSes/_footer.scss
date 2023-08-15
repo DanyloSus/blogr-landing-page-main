@@ -1,0 +1,18 @@
+footer {
+  div {
+    div {
+      flex-direction: column;
+      display: flex;
+      margin-top: 40px;
+      gap: 10px;
+      a {
+        opacity: 0.5;
+        transition: text-decoration 0.25s ease-in-out;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

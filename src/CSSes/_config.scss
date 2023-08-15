@@ -5,6 +5,16 @@
 @tailwind utilities;
 
 :root {
-  font-family: "Overpass", sans-serif;
   font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Overpass", sans-serif;
 }

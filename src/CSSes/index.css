@@ -3,6 +3,71 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  font-family: "Overpass", sans-serif;
   font-family: "Ubuntu", sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: "Overpass", sans-serif;
+}
+
+header nav > div {
+  position: relative;
+}
+header nav > div > a {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+header nav > div > a:hover {
+  text-decoration: underline;
+}
+header nav > div > a:hover img {
+  rotate: 180deg;
+}
+header nav > div > a img {
+  margin-left: 4px;
+  transition: rotate 0.25s ease-in-out;
+}
+header nav > div div {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  background-color: white;
+  color: hsl(237, 23%, 32%);
+  padding: 32px 24px;
+  gap: 10px;
+  width: 168px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px hsla(0, 0%, 0%, 0.2);
+}
+header nav > div div a:hover {
+  text-decoration: underline;
+  color: hsl(237, 17%, 21%);
+  font-weight: 600;
+}
+header nav > div:hover div {
+  display: flex;
+}
+
+footer div div {
+  flex-direction: column;
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+}
+footer div div a {
+  opacity: 0.5;
+  transition: -webkit-text-decoration 0.25s ease-in-out;
+  transition: text-decoration 0.25s ease-in-out;
+  transition: text-decoration 0.25s ease-in-out, -webkit-text-decoration 0.25s ease-in-out;
+}
+footer div div a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */
