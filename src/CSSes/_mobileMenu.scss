@@ -1,0 +1,27 @@
+#mobileMenu {
+  div {
+    a {
+      @apply flex items-center gap-1 justify-center mx-auto transition-opacity;
+      img {
+        transition: rotate 0.25s ease-in-out;
+      }
+    }
+    div {
+      display: none;
+      background-color: #efeff1;
+      @apply rounded-lg p-5 gap-2;
+    }
+    &:hover {
+      a {
+        opacity: 0.8;
+        img {
+          rotate: 180deg;
+        }
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

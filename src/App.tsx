@@ -21,6 +21,7 @@ const App = () => {
           categories, sections, format, or flow. With this functionality, you're
           in full control."
         img="illustration-editor-desktop.svg"
+        mImg="illustration-editor-mobile.svg"
         direction="right"
       />
       <MiddleSection />
@@ -31,6 +32,7 @@ const App = () => {
         h22="Powerful tooling"
         p2="Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites."
         img="illustration-laptop-desktop.svg"
+        mImg="illustration-laptop-mobile.svg"
         direction="left"
       />
       <Footer />

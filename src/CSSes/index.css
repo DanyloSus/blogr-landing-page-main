@@ -56,11 +56,15 @@ header nav > div:hover div {
   display: flex;
 }
 
+footer div {
+  @apply lg:mx-auto;
+}
 footer div div {
   flex-direction: column;
   display: flex;
   margin-top: 40px;
   gap: 10px;
+  @apply lg:mt-5;
 }
 footer div div a {
   opacity: 0.5;
@@ -70,4 +74,26 @@ footer div div a {
 }
 footer div div a:hover {
   text-decoration: underline;
+}
+
+#mobileMenu div a {
+  @apply flex items-center gap-1 justify-center mx-auto transition-opacity;
+}
+#mobileMenu div a img {
+  transition: rotate 0.25s ease-in-out;
+}
+#mobileMenu div div {
+  display: none;
+  background-color: #efeff1;
+  @apply rounded-lg p-5 gap-2;
+}
+#mobileMenu div:hover a {
+  opacity: 0.8;
+}
+#mobileMenu div:hover a img {
+  rotate: 180deg;
+}
+#mobileMenu div:hover div {
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */
