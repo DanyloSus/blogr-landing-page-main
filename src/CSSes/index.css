@@ -96,4 +96,24 @@ footer div div a:hover {
 #mobileMenu div:hover div {
   display: flex;
   flex-direction: column;
+}
+
+.reveal-r {
+  transform: translateX(150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.reveal-r.active {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.reveal-l {
+  transform: translateX(-150px);
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+.reveal-l.active {
+  transform: translateX(0);
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */

@@ -14,7 +14,7 @@ const Intro = () => {
         className="absolute h-[2000px] object-cover -top-[600px]"
       />
       <Header />
-      <div className="relative text-center mx-auto flex flex-col gap-8 mt-[80px] lg:px-[42px] lg:gap-6 z-0">
+      <div className="relative text-center mx-auto flex flex-col gap-8 mt-[80px] lg:px-[42px] lg:gap-6 z-0 reveal-r">
         <h1 className="font-bold text-6xl lg:text-[32px]">
           A modern publishing platform
         </h1>

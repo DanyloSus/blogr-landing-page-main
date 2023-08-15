@@ -40,7 +40,7 @@ const Section = ({
       <img
         src={`./${img}`}
         alt={img}
-        className={`absolute -${direction}-[300px] top-[72px] -mt-[160px] lg:hidden`}
+        className={`absolute -${direction}-[300px] top-[72px] -mt-[160px] lg:hidden reveal-l`}
         style={
           direction === "left"
             ? { margin: "-250px 0px 0px -500px" }
@@ -50,12 +50,16 @@ const Section = ({
         }
       />
 
-      <h1 className="mt-[160px] text-center text-very-dark-gray-blue font-bold text-4xl -ml-[168px] lg:text-3xl lg:ml-0">
+      <h1 className="mt-[160px] text-center text-very-dark-gray-blue font-bold text-4xl -ml-[168px] lg:text-3xl lg:ml-0 reveal-r">
         {h1 ? h1 : ""}
       </h1>
-      <img src={`./${mImg}`} alt={mImg} className="w-full hidden lg:block" />
+      <img
+        src={`./${mImg}`}
+        alt={mImg}
+        className="w-full hidden lg:block  reveal-l"
+      />
       <div
-        className="max-w-[520px] mt-[80px] lg:mt-10 lg:mx-auto"
+        className="max-w-[520px] mt-[80px] lg:mt-10 lg:mx-auto reveal-r"
         style={
           direction === "left"
             ? windowWidth >= 1024
@@ -70,7 +74,7 @@ const Section = ({
         <p className="text-body-copy mt-6 lg:mt-3 lg:text-[17px]">{p1}</p>
       </div>
       <div
-        className="max-w-[520px] mt-[80px] lg:mt-10 lg:mx-auto"
+        className="max-w-[520px] mt-[80px] lg:mt-10 lg:mx-auto reveal-l"
         style={
           direction === "left"
             ? windowWidth >= 1024

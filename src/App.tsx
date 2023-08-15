@@ -1,9 +1,37 @@
+import { useEffect } from "react";
 import Footer from "./Elements/Footer";
 import Intro from "./Elements/Intro";
 import MiddleSection from "./Elements/MiddleSection";
 import Section from "./Elements/Section";
 
 const App = () => {
+  const reveal = () => {
+    var reveals_l = document.querySelectorAll(".reveal-l");
+    for (var i = 0; i < reveals_l.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals_l[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals_l[i].classList.add("active");
+      }
+    }
+    var reveals_r = document.querySelectorAll(".reveal-r");
+    for (var i = 0; i < reveals_r.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals_r[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+      if (elementTop < windowHeight - elementVisible) {
+        reveals_r[i].classList.add("active");
+      }
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", reveal);
+
+    reveal();
+  }, []);
+
   return (
     <main>
       <Intro />
